@@ -9,12 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
+@RequestMapping(("/hello"))
 public class BusinessTestController {
 
     private final BusinessService businessService;
 
 
-    @GetMapping("/hello")
+    @GetMapping
     public String getDataFromService()
     {
         return businessService.getHelloFromService();
