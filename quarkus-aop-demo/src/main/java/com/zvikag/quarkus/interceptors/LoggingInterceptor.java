@@ -10,7 +10,7 @@ import javax.interceptor.Interceptor;
 import javax.interceptor.InvocationContext;
 
 @Logged
-@Priority(2020)
+@Priority(2)
 @Interceptor
 public class LoggingInterceptor {
 
