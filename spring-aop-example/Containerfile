@@ -1,4 +1,5 @@
-FROM docker.io/openjdk:11
+FROM docker.io/openjdk:20-ea-14-jdk
+
 USER root
 
 RUN useradd -u 1001 appuser \
